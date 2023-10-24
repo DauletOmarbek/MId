@@ -8,6 +8,17 @@ export class PostService {
 
   constructor() { }
 
+  getPostById(id: number): Post{
+    return this.getAll().find(post => post.id == id)!;
+ }
+
+ addPost(post: Post){
+
+ }
+
+// addLike(id: number): Post{
+//   this.getAll().find(post => post.id == id) ;
+// }
 
 
  getAll(): Post[] {

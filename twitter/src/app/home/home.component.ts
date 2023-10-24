@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent {
   posts: Post[] = [];
+  like: number = 0;
 
   constructor(private postService: PostService,
     private route: ActivatedRoute
@@ -20,5 +21,10 @@ export class HomeComponent {
       this.posts = this.postService.getAll();
    
   }
+
+
+  // addlike(): void {
+
+  // }
 
 }

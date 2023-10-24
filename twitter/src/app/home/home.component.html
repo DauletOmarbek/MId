@@ -3,7 +3,7 @@
         <a routerLink="/post/{{ post.id }}">
             
             <div class="content">
-                <div class="name">
+                <div  class="name">
                     {{ post.name }}
                 </div>
                 <img style="width:30%"src="{{ post.imageUrl }}" alt="">
@@ -13,8 +13,9 @@
                         {{ comment }}
                     </li>
                 </div> -->
-                <button>Like {{post.like}}</button>
-                <button>Comment </button>
+                <br>
+                <button >Like {{post.like}}</button>
+                <button style="margin-bottom: 50;" >Comment </button>
                 <div>{{ post.comment }}</div>
                 
             </div>
